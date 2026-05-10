@@ -1,10 +1,12 @@
+##Live Demo
+https://factcheck-agent-fpdz5c3rdkhbo7uqb9shrx.streamlit.app/
 # AI Fact-Check Agent
 
 A web application that automatically verifies factual claims from uploaded PDF documents using AI and live web search.
 
 ## Overview
 
-This project extracts claims from PDF files and validates them against live internet sources. It helps identify outdated statistics, false claims, and unsupported information in marketing, research, or technical documents.
+This project is a web-based fact-checking tool that analyzes PDF documents and verifies factual claims using AI and live web search. The application extracts claims related to statistics, dates, technical facts, and financial figures, then compares them against real-time web data to identify false or outdated information.
 
 The system performs three main tasks:
 
@@ -39,7 +41,7 @@ The system performs three main tasks:
 - Python
 
 ## AI & APIs
-- Google Gemini API
+- OpenRouter API
 - Tavily Search API
 
 ## Libraries
@@ -51,15 +53,24 @@ The system performs three main tasks:
 
 # Project Structure
 
+
 ```bash
 factcheck-app/
 │
 ├── app.py
 ├── requirements.txt
 ├── README.md
-├── .env
 │
 └── utils/
     ├── extract_text.py
     ├── claims.py
     └── verify.py
+```
+
+# How It Works
+
+1. User uploads a PDF document  
+2. Text is extracted from the PDF  
+3. AI identifies factual claims from the content  
+4. Claims are verified using live web search  
+5. The system returns verification results with explanations
